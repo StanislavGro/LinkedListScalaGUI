@@ -3,9 +3,9 @@ package lab.singleList.classes.dataStructure
 import lab.singleList.traits.{Linked, Comparator, someAction}
 //import lab.lab.singleList.classes.dataStructure.Node
 
-class singleList[E]() extends Linked[E]{
+class singleList[E]() extends Linked[E], Serializable{
 
-  class Node[E](var e:E, var n:Node[E]){
+  class Node[E](var e:E, var n:Node[E]) extends Serializable{
 
     var elem:E = e
     var next:Node[E] = n

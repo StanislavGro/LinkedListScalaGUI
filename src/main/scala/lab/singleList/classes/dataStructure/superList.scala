@@ -4,7 +4,7 @@ import lab.singleList.traits.Comparator
 import lab.singleList.classes.dataStructure.singleList
 import scala.util.control.Breaks.breakable
 
-class superList[E] {
+class superList[E] extends Serializable{
 
   var first:superNode = null
   var last:superNode = null
@@ -51,7 +51,7 @@ class superList[E] {
 
   }
 
-  class superNode(var data: singleList[E]) {
+  class superNode(var data: singleList[E]) extends Serializable{
     var next: superNode = null
   }
 

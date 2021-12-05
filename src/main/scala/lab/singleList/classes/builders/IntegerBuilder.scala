@@ -2,7 +2,6 @@ package lab.singleList.classes.builders
 
 import lab.singleList.traits.{Comparator, TypeBuilder}
 
-
 class IntegerBuilder extends TypeBuilder {
 
   val range:Int = 100
